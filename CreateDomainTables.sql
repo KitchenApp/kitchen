@@ -1,0 +1,17 @@
+CREATE  TABLE `Domain`.`Item` (
+  `ItemId` INT NOT NULL AUTO_INCREMENT ,
+  `Name` VARCHAR(255) NOT NULL ,
+  `CreateDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  PRIMARY KEY (`ItemId`) );
+  
+CREATE  TABLE `Domain`.`ItemStatus` (
+  `ItemStatusId` INT NOT NULL AUTO_INCREMENT ,
+  `Status` VARCHAR(255) NOT NULL ,
+  `CreateDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  PRIMARY KEY (`ItemStatusId`) );
+
+  CREATE  TABLE `Domain`.`RecipeStatus` (
+  `RecipeStatusId` INT NOT NULL AUTO_INCREMENT ,
+  `Status` VARCHAR(255) NOT NULL ,
+  `CreateDate` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  PRIMARY KEY (`RecipeStatusId`) );
